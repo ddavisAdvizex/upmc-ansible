@@ -6,7 +6,7 @@
   tasks:
     - name: Test if everyone is alive and well.
       ping:
-	  
+  
     - name: Install nginx
       yum:
       name: nginx
