@@ -1,0 +1,16 @@
+---
+- hosts: all
+  remote_user: ec2-user
+  tasks:
+    - name: Test if everyone is alive and well.
+      ping:
+
+    - name: Is nginx installed?
+      yum:
+        name: nginx
+        state: present
+
+    - name: Is nginx running?
+      service:
+        name: nginx
+        state: started
